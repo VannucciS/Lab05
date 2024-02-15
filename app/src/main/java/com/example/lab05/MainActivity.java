@@ -38,7 +38,10 @@ public class MainActivity extends AppCompatActivity {
      */
     private String msg = "";
 
-
+    /**
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,10 +64,20 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     *
+     * @param c
+     * @return
+     */
     private boolean isSpecialCharacter(char c) {
         return SPECIAL_CHARACTERES.contains(c);
     }
 
+    /**
+     *
+     * @param password
+     * @return
+     */
     private boolean checkPasswordComplexity(String password) {
         msg = "";
         /**
